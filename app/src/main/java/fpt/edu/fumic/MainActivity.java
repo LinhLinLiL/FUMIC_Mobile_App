@@ -15,7 +15,6 @@ import fpt.edu.fumic.adapters.BookMainAdapter;
 import fpt.edu.fumic.adapters.ViewPagerAdapter;
 import fpt.edu.fumic.ui.AddBookActivity;
 import fpt.edu.fumic.ui.CategoryListActivity;
-import fpt.edu.fumic.ui.NotificationActivity;
 import fpt.edu.fumic.ui.SearchActivity;
 import fpt.edu.fumic.R;
 import fpt.edu.fumic.utils.UserInformation;
@@ -121,8 +120,8 @@ public class MainActivity extends AppCompatActivity {
         else if(id == R.id.m_category){
             Intent intent = new Intent(getApplicationContext(), CategoryListActivity.class);
             startActivity(intent);
-        }  else if(id == R.id.m_notification){
-            Intent intent = new Intent(getApplicationContext(), NotificationActivity.class);
+        } else if (id == R.id.m_search) {
+            Intent intent = new Intent(getApplicationContext(), SearchActivity.class);
             startActivity(intent);
         }
         return super.onOptionsItemSelected(item);

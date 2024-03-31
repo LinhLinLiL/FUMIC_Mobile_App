@@ -22,6 +22,4 @@
     <string name="sort_by_date_DESC">Newest</string>
     <string name="sort_by_id_ASC">Oldest</string>
     <string name="sort_by_rating_DESC">Top Rating</string>
-
-    <string name="fumic_notification_channel">fumic_notification_channel</string>
 </resources>
