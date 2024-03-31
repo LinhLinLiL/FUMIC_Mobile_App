@@ -12,13 +12,11 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import fpt.edu.fumic.R;
-import fpt.edu.fumic.ui.AdminActivity;
 import fpt.edu.fumic.ui.BookListActivity;
 import fpt.edu.fumic.ui.BookListActivity2;
 import fpt.edu.fumic.ui.CategoryListActivity;
 import fpt.edu.fumic.ui.ManageActivity;
 import fpt.edu.fumic.ui.ManageUserActivity;
-import fpt.edu.fumic.ui.NotificationActivity;
 import fpt.edu.fumic.utils.MyToast;
 
 public class ManagerFragment extends Fragment implements View.OnClickListener{
@@ -56,8 +54,8 @@ public class ManagerFragment extends Fragment implements View.OnClickListener{
             MyToast.confusingToast(getContext(), "This function is coming soon!");
             intent = new Intent(getActivity(), CategoryListActivity.class);
         } else if (viewId == R.id.iv_notification) {
-//            MyToast.confusingToast(getContext(), "This function is coming soon!");
-            intent = new Intent(getActivity(), AdminActivity.class);
+            MyToast.confusingToast(getContext(), "This function is coming soon!");
+//            intent = new Intent(ManageActivity.this, NotificationActivity.class);
         }
         if (intent != null) {
             startActivity(intent);

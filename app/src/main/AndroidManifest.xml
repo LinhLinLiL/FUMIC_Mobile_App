@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-    <uses-permission android:name="android.permission.SEND_NOTIFICATIONS" />
 
-    <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <uses-permission
         android:name="android.permission.READ_EXTERNAL_STORAGE"
         android:maxSdkVersion="32" />
@@ -20,17 +17,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FUMIC"
         tools:targetApi="31">
-        <activity
-            android:name=".ui.AdminActivity"
-            android:exported="true" />
-        <activity
-            android:name=".ui.NotificationActivity"
-            android:exported="true" />
-
-        <service
-            android:name=".utils.MyDemoUnboundService"
-            android:enabled="true"
-            android:exported="true" />
 
         <activity
             android:name=".ui.BookListActivity2"
@@ -41,12 +27,10 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ui.ManageActivity" />
         </activity>
-        <activity
-            android:name=".ui.UpdateBookActivity"
-            android:exported="true" />
-        <activity
-            android:name=".ui.ChapterContentActivity"
-            android:exported="true" />
+        <activity android:name=".ui.UpdateBookActivity"
+            android:exported="true"/>
+        <activity android:name=".ui.ChapterContentActivity"
+            android:exported="true"/>
         <activity
             android:name=".ui.BookListActivity"
             android:exported="true"
@@ -76,6 +60,9 @@
         </activity>
         <activity
             android:name=".ui.BookDetailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.SearchActivity"
             android:exported="true" />
         <activity
             android:name=".ui.ManageActivity"
@@ -123,5 +110,4 @@
             </intent-filter>
         </activity>
     </application>
-
 </manifest>
